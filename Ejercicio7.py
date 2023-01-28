@@ -61,7 +61,7 @@ def decoding(encoded_text, raiz):
     return decoded_text
 
 def prueba_huffman():
-    text = "apa"
+    text = "afat"
     print("Texto original: ", text)
     encoded_text, raiz = encoding(text)
     print("Texto codificado: ", encoded_text)
