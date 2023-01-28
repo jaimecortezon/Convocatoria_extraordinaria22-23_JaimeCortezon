@@ -81,10 +81,12 @@ planet7 = Planet("planet7")
 Tierra.add_neighbor(Knowhere, 20)
 Tierra.add_neighbor(ZenWhoberi, 25)
 Tierra.add_neighbor(Vormir, 30)
+Tierra.add_neighbor(Titan, 25)
 
 Knowhere.add_neighbor(Tierra, 20)
 Knowhere.add_neighbor(ZenWhoberi, 15)
 Knowhere.add_neighbor(Vormir, 20)
+Knowhere.add_neighbor(Titan, 25)
 
 ZenWhoberi.add_neighbor(Tierra, 25)
 ZenWhoberi.add_neighbor(Knowhere, 15)
@@ -104,10 +106,12 @@ Titan.add_neighbor(Tierra, 25)
 Nidavellir.add_neighbor(Titan, 20)
 Nidavellir.add_neighbor(Tierra, 20)
 Nidavellir.add_neighbor(Vormir, 30)
+Nidavellir.add_neighbor(ZenWhoberi, 30)
 
 planet1.add_neighbor(Nidavellir, 20)
 planet1.add_neighbor(planet2, 20)
 planet1.add_neighbor(planet3, 25)
+planet1.add_neighbor(planet4, 30)
 
 planet2.add_neighbor(Vormir, 25)
 planet2.add_neighbor(planet1, 20)
@@ -117,20 +121,27 @@ planet2.add_neighbor(planet4, 30)
 planet3.add_neighbor(planet1, 25)
 planet3.add_neighbor(planet2, 20)
 planet3.add_neighbor(planet5, 20)
+planet3.add_neighbor(planet6, 30)
 
 planet4.add_neighbor(planet2, 30)
 planet4.add_neighbor(planet5, 25)
 planet4.add_neighbor(planet6, 20)
+planet4.add_neighbor(planet7, 30)
 
 planet5.add_neighbor(planet3, 20)
 planet5.add_neighbor(planet4, 25)
 planet5.add_neighbor(planet7, 30)
+planet5.add_neighbor(planet6, 20)
 
 planet6.add_neighbor(planet4, 20)
 planet6.add_neighbor(planet7, 25)
+planet6.add_neighbor(planet5, 20)
+planet6.add_neighbor(planet3, 30)
 
 planet7.add_neighbor(planet5, 30)
 planet7.add_neighbor(planet6, 25)
+planet7.add_neighbor(planet4, 30)
+planet7.add_neighbor(planet2, 20)
 
 
 graph = [Tierra, Knowhere, ZenWhoberi, Vormir, Titan, Nidavellir, planet1, planet2, planet3, planet4, planet5, planet6, planet7]
